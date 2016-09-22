@@ -19,5 +19,6 @@ from core import views as coreviews
 
 urlpatterns = [
 		url(r'^$', coreviews.index, name='index'),
+		url(r'^core/', include('core.urls')),
     url(r'^admin/', admin.site.urls),
 ]

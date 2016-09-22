@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>alexd.info</title>
-  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lora|Architects+Daughter|Bad+Script|Damion|Comfortaa|Monoton' type='text/css'>
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lora|Architects+Daughter' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84622303-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
   </head>
 
 
@@ -33,20 +43,20 @@
     <div class="container-fluid body-outer">
   	  <div class="row-fluid tab-middle">  
         <div class="col-md-4 animated fadeInUp">
-          <a href="tracker/weight/new">
+          <a href="core/research">
             <div class="maintile" id="research">
               <div class="tiletitle">Education<br>Research</div><br>
               <div class="underline"></div>
               <div class="titlesub">Learning about Learning</div><br>
               <div class="tilebody">
-                  Some of the interesting outcomes from analyzing longitudinal (weekly) motivation data from students in a variety of intro college engineering and science courses. 
+                  Some of the interesting outcomes of analyzing longitudinal (weekly) motivation data from students in a variety of intro college engineering and science courses. 
               </div>
             </div>      
           </a>
         </div>
         
         <div class="col-md-4 animated fadeInUp">
-          <a href="tracker/weight/">
+          <a href="/core/rstats">
             <div class="maintile" id="stats">
               <div class="tiletitle">R Statistics<br>Programming</div>
               <br>
@@ -61,12 +71,12 @@
         </div>
 
         <div class="col-md-4 animated fadeInUp">
-          <a href="#">
-            <div class="maintile" id="viz">
-              <div class="tiletitle">Novel<br>Visualizations</div>
+          <a href="/core/viz">
+            <div class="maintile" id="viz"
+>              <div class="tiletitle">Novel<br>Visualizations</div>
               <br>
               <div class="underline"></div>
-              <div class="titlesub">Pictures as One Thousand Words</div>
+              <div class="titlesub">Pictures as a Thousand Words</div>
               <br>
               <div class="tilebody">
                 Part of the power (and fun!) of data visualization is that it can be approached in many ways. This is a collection of some of the powerful and/or non-traditional visualizations one might find interesting.
@@ -80,6 +90,6 @@
 
   </body>
   <footer>
-  	look at the footers!!
+  	<div style='text-align: right; font-size:1.2em; padding-right:15px; padding-top:3px; font-family: "Architects Daughter", sanserif;'><a href='mailto:contact@alexd.info'><span style='color: #ededeb;'>contact@alexd.info<span></a></div>
   </footer>
 </html>
