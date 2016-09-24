@@ -1,0 +1,76 @@
+.axis path {
+	fill: none;
+	stroke: #777;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: Lato;
+	font-size: 13px;
+	fill: #999999;
+}
+.leg-group {
+	font-size: 14px;
+	font-weight: bold;
+	opacity: .7;
+}
+.legbox{
+	opacity: 1;
+	stroke: #333333;
+}
+.leg-group.clicked {
+	opacity: .7;
+}
+.leg-group.hover {
+	opacity: 1;
+}
+
+.line {
+	opacity: .7;
+	stroke-width: 4px;
+	stroke: blue;
+	fill: none;
+}
+.line.clicked {
+	opacity: .7;
+	stroke-width: 10px;
+}
+.line.visited {
+	opacity: .2;
+}
+.line.hover {
+	opacity: 1;
+	stroke-width: 8px;
+}
+.line.clicked.visited{
+	opacity: .4;
+}
+.line.hover.visited{
+	opacity: .7;
+}
+#titlebar{
+	color: white;
+	height: 30px;
+}
+.obvi{
+	fill: yellow;
+}
+.viewport {
+	stroke: gray;
+	fill: black;
+	fill-opacity:0.2;
+}
+.overlay{
+	fill-opacity: 0;
+	stroke-width: 2px;
+	stroke: none;
+}
+.hidden{
+	opacity: 0;
+}
+.shadow{
+	text-shadow: 
+		-5px -5px 4px #000,
+		 5px -5px 4px #000,
+		-5px  5px 4px #000,
+		 5px  5px 4px #000;
+}

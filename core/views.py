@@ -13,3 +13,6 @@ def rstats(request):
 
 def viz(request):
 	return render(request, 'core/viz.html')
+
+def locus(request):
+	return render(request, 'core/locus.html')

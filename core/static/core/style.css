@@ -163,7 +163,9 @@ a:focus {
 	text-shadow: 0 1px #666666;
 }
 
-
+.italic{
+	font-style: italic;
+}
 .tiletitle {
 	margin-top: 5%;
 	text-align: center;
