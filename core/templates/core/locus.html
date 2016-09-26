@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js" charset="utf-8"></script>
   {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}"/>
-  <link rel="stylesheet" type="text/css" href="{% static 'core/vizzit.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'core/vizzit/vizzit.css' %}"/>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -58,7 +58,7 @@
             <span style='font-size:.8em;'>
             I've been working with web applications and databases for the last few years  in my role as an academic researcher, and since moving to Asheville I've been looking for way to apply and develop these skills in service to a meaningful cause.<br><br>
             This role at Locus seems like a perfect fit!<br><br>
-            I put this page together to demonstrate some of my previous work with the technologies listed in the job description - why just tell when you can also show? Though some of these examples are from a while ago and (shall we say) don't fully represent my current design sensibilities, I think they do provide some useful insight into my range of experience.<br><br>
+            I put this page together to demonstrate some of my previous work with the technologies listed in the job description (why just tell when you can also show?), and though some of these examples are a couple years old and don't reflect my current design sensibilities, I think they still provide some useful insight into my range of experience. For lack of an easily display project, <span style='font-family: monospace; font-size:.8em; background-color:#fafafa'>"SELECT description FROM show_and_tell WHERE LOWER(tech_used) LIKE '%sql%'"</span> returns no records, but I do have some experience working with both relational and non-relational databases, schemas, and queries.<br><br>
             At the end I'll also tell you a little more information about what I'm like and what I like about this opportunity. But first, a little demo derby!
             </span>
           </div>     
@@ -76,19 +76,19 @@
           <div style='width:900px; height:660px; font-family:Arial; margin:auto; border-radius:25px; background: #333333; font-size:.7em'>
             <div id='vizzit' width='900' height='450' style='width:900px'></div>
             <div id='titlebar' style='width:98%; margin:auto; text-align:center'><p><span id='title_text'></span></p></div>
-            <script src="{% static 'core/vizzit.js' %}"></script>
+            <script src="{% static 'core/vizzit/vizzit.js' %}"></script>
           </div>
         </div>
       </div>
         
 
       <div class='row'>
-        <div class='col-xs-8 tilebody' style='padding:0px 30px'>
+        <div class='col-md-8 tilebody' style='padding:0px 30px'>
           <div style='width:100%'>
             <div style='text-align:center;text-decoration: underline'>Description</div>
             <div style='width:100%'>
-              <div style='padding:20px; padding-top:5px; font-size:.8em; margin:auto; text-align:justify'>
-                This is part of a current personal project of mine that was sparked by the desire to see how the front page of reddit evolves over time. I'm scraping and accruing front-page data into a database, which can then be rendered in an interactive timeline format. My goal is to make a publicly available live version, but what you see here is just a demo with some hard-coded data.<br><br>
+              <div style='padding:5px 20px; font-size:.8em; margin:auto; text-align:justify'>
+                This is part of a current personal project of mine that was sparked by the desire to see how the front page of reddit evolves over time. I'm scraping and accruing front-page data into a database, which can then be rendered in an interactive timeline format. My goal is to make a publicly available live version, but what you see here is just a demo retrieving a static json file.<br><br>
                 It's been fun to explore mixing interaction with analysis - for instance the color tiles re-arrange to reflect the "score" for that subreddit in the displayed time range, and by isolating just a few subreddits you can see how different categories are popular at different times of day (though not with this short dataset).
                 <br><br>
                 I find that teaching myself things is most effective with a goal in mind, so this project has been a great platform both for getting practice with d3 and with solving emergent challenges using javascript!
@@ -96,10 +96,10 @@
             </div>
           </div>
         </div>
-        <div class='col-xs-4 tilebody' style='padding:0px 10px;'>
+        <div class='col-md-4 tilebody' style='padding:0px 10px;'>
           <div style='text-align:center;text-decoration: underline'>Tech Used</div>
           <div style='width:100%'>
-            <div style='padding:10px; padding-top:5px; font-size:.8em; margin:auto; width:250px'>
+            <div style='padding:5px 10px; font-size:.8em; margin:auto; width:250px'>
               <ul>
                 <li>HTML & CSS
                 </li>
@@ -111,8 +111,8 @@
                 <li>MongoDB</li>
               </ul>
             </div>
-            <div style='padding-top:15px; font-size:.7em'>
-              Please note that this code is still very much a work in progress - I've left many variables exposed to the console, and haven't really given it a good re-factor. These steps were pending a re-write of the scraper that would store data in the rank-changes-only format I wound up needing to employ in the graph.
+            <div style='padding-top:15px; font-size:.7em; max-width:550px; margin:auto'>
+              Please note that this code is still very much a work in progress - the sizing isn't responsive, I've left many variables exposed to the console, and I haven't really given it a good re-factor. These steps were pending a re-write of the scraper that would store data in the rank-changes-only format that I wound up needing to employ in the graph and that will help significantly reduce the amount of transferred data.
             </div>
           </div>
         </div>
@@ -120,21 +120,20 @@
 
       <div class='row'>
         <div class='col-xs-12 tilebody'>
-           <div style='width:100%; text-align:center; font-weight:bold; margin-top: 60px; font-size: 1.1em'>MotivationSurvey.com</div>
+           <div style='width:100%; text-align:center; font-weight:bold; padding-top: 100px; font-size: 1.1em'>MotivationSurvey.com</div>
         </div>
-        <div class='col-sm-8 tilebody' style='padding:0px 30px'>
+        <div class='col-md-8 tilebody' style='padding:0px 30px'>
           <div style='width:100%; text-align:center; text-decoration:underline'>Description</div>
-          <div style='padding:20px; font-size:.8em; text-align: justify'>
+          <div style='padding:5px 20px; font-size:.8em; text-align: justify'>
             MotivationSurvey.com was a custom-built survey administration web application designed to reduce or eliminate many of the difficulties encountered in manual administration of longitudinal surveys.<br><br>
             Because of our unique use-case of administering surveys each week at times specific to each class, there was no readily available off-the-shelf survey system that automated this process. Additionally we wanted to implement a smart reminder system that emailed only non-responders, which meaningfully aided our completion rates without annoying people who already participated.<br><br>
             The system was very successful, collecting over 5 thousand responses during the three years of the project and allowing us to accrue the largest dataset of its kind while having much lower incompletion rates and administrative loads than would have occurred with a manually administered, non-customized approach. Unfortunately the site is no longer available because the research project has ended, though you can still see the welcome page via the <a target='_blank' href='http://web.archive.org/web/20160306040427/http://motivationsurvey.com/'>wayback machine</a>.<br><br>
             This project actually launched my web-app trajectory:  we hired two students over the summer to build the site, but they lost momentum and wound up leaving significant portions uncompleted and non-functional. With our large-scale data collection looming, I taught myself enough about javascript, node, jquery, and css to complete the project and add new functionality down the line. Although I was not exactly euphoric at the time, in retrospect I'm glad this launched me into the very interesting and powerful world of modern full stack web development!
           </div>
         </div>
-        <div class='col-sm-4 tilebody' style='padding:0px 10px;'>
+        <div class='col-md-4 tilebody' style='padding:0px 10px;'>
           <div style='text-align:center;text-decoration: underline'>Tech Used</div>
-          <div style='width:100%'>
-            <div style='padding:10px; padding-top:5px; font-size:.8em; margin:auto; width:280px'>
+            <div style='padding:5px 10px; font-size:.8em; margin:0px auto; width:280px'>
               <ul>
                 <li>HTML & CSS
                   <ul><li>Twitter Bootstrap</li></ul>
@@ -154,12 +153,12 @@
                 </li>
               </ul>
             </div>
-            <div style='padding-top:15px; font-size:.7em'>
-              In this animation of the development process of MotivationSurvey.com, I'm the blue "tallhobbes" figure that comes in after the two minute mark, which was December...
-              <div style="height:4px"></div>
+            <div style='padding-top:15px; font-size:.7em; max-width: 450px; margin:auto'>
               <iframe width="100%" height='250px' src="https://www.youtube.com/embed/3Ve2btDLYO0" frameborder="0" allowfullscreen></iframe>
+              <div style="margin-top:4px; text-align: justify; width:95%; margin:auto">
+                In this animation of the development process of MotivationSurvey.com, I'm the blue "tallhobbes" figure that comes in after the two minute mark, which was December.
+              </div>
             </div>
-          </div>
         </div>
       </div>
 
@@ -167,16 +166,16 @@
         <div class='col-xs-12 tilebody'>
           <div style='width:100%; text-align:center; font-weight:bold; padding-top:100px; font-size:1.1em'>Mobile-Friendly Survey Interface using Angular.js</div>
         </div>
-        <div class='col-sm-8 tilebody' style='padding:0px 30px'>
+        <div class='col-md-8 tilebody' style='padding:0px 30px'>
           <div style='text-align:center;text-decoration: underline'>Description</div>
-          <div style='padding:20px; font-size:.8em; text-align: justify'>
+          <div style='padding:5px 20px; font-size:.8em; text-align: justify'>
             Reviewing the Google Analytics for our motivation survey site revealed that many students were accessing the page via their mobile device. This created usability issues in the survey, which was laid out as a matrix of radio buttons in a fixed-width, non-responsive format that would be significantly obscured in a mobile browser.<br><br>
             To address this, I made a prototype for a responsive and more touch-friendly interface using Twitter Bootstrap, which was already used in the site, but also using the power of data-binding provided by Angular.js. This made coordinating the states of various elements on the page much cleaner than in raw javascript or JQuery, and also opened the possibility for efficient creation of new surveys by dynamically generating forms from a stored data structure.<br><br>
             This interface was also an improvement for desktop users: the original layout had the the meaning ascribed to the numeric responses displayed only in the column headers, which made them difficult to see as the user worked down the form. The new version made these meanings visible for each question, reducing the possibility of accidental misinterpretation and increasing accuracy.<br><br>
             
           </div>
         </div>
-        <div class='col-sm-4 tilebody' style='padding:0px 10px;'>
+        <div class='col-md-4 tilebody' style='padding:0px 10px;'>
           <div style='text-align:center;text-decoration: underline'>Tech Used</div>
           <div style='width:100%'>
             <div style='padding:10px; padding-top:5px; font-size:.8em; margin:auto; width:280px'>
@@ -191,10 +190,14 @@
                 </li>
               </ul>
             </div>
-            <div style='padding-top:52px; font-size:.7em'>
-              <a target='_blank' href="{% static 'core/ng/survey.html' %}">You can see the prototype here</a>. 
-              <br><br>
-              Note that the directory structure of the app has been flattened for the purposes of including it in this context.
+            <div style='border:1px; border-color:black; border-style:dashed; border-radius:7px; padding-top:7px; background-color: #f5f5f5; max-width:450px; margin: 20px auto 10px'>
+              <iframe width=100% height=170px frameborder='0' scrolling='no' src='/static/core/ng/survey_one.html'></iframe>
+            </div>
+            <div style='font-size:.7em; padding: 17px 15px; max-width: 450px; margin:auto'>
+              <a target='_blank' href="{% static 'core/ng/survey.html' %}">You can see the full survey prototype here</a>. 
+              <div style='margin-top: 12px'>
+                (The directory structure of the app has been flattened for the purposes of including it in this context.)
+              </div>
            </div>
           </div>
         </div>
@@ -207,13 +210,14 @@
       <div class='col-xs-12'>
         <div class='tilebody' style='padding-top:30px; padding-bottom: 50px; width:80%; margin:auto; text-align:left; max-width: 800px'>
           <div style='text-align:center; width:70%;margin:auto'>
-            I'm a self-starting technophile with a desire to be part of something good<br><br>
+            A self-starting technophile with a desire to be part of something good<br><br>
           </div>
           <span style='font-size:.8em;'>
-          I am a highly independent worker and learner who loves to teach myself things! After working in isolation for some time, however, I'm very driven to find a place where I can meaningfully contribute to others and be around people from whom I can learn and master new skills. I am also very drawn to mission-driven work, so the environmental protection element of Locus resonates very strongly with me.
+          I am a highly independent worker who loves the challenge of teaching myself new things! What I find most motivating, however, is the sense of making a real contribution to the people around me and, ideally, to a cause greater than just myself. Hence, I am very enticed by the promise this position holds as a role where I could meaningfully contribute to others, be around people from whom I can learn and grow, and work to support an environmentally conscious goal that resonates very strongly with me.
           <br><br>
-          I'm originally from Kentucky but spent the last 14 or so years in the Boston area, until <strike>fleeing the winter</strike> moving to Asheville last February. My educational background is in Engineering with a concentration in Systems Design, and I often find this holistic yet technical lens to be useful in many situations.<br><br>
-          Although I am thoroughly geeky and love the wonders of technology, I also love the outdoors and music - my reasons for relocating to Asheville weren't solely weather related! I greatly enjoy my new home, and find the friendly and laid-back demeanor to jive very well with my own.
+          I'm originally from Kentucky but spent the last 14 or so years in the Boston area, until <strike>fleeing the winter</strike> moving to Asheville last February. My educational background is in Engineering with a concentration in Systems Design, and I find this holistic yet technical lens to be useful in many situations.
+          <br><br>
+          Although I love the wonders of technology, I also love the outdoors and music - my reasons for relocating to Asheville weren't solely weather related! I greatly enjoy my new home, and find the friendly and laid-back demeanor to jive very well with my own.
 
           </span>
         </div>
