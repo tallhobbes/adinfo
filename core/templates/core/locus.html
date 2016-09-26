@@ -55,12 +55,12 @@
             <div style='text-align:center; width:100%;'>
               My name is Alex Dillon, and I am very interested in your opening for an <a target='_blank' href='http://locustec.com/position/entry-level-application-developer-3510-5/'>Application Developer</a><br><br>
             </div>
-            <span style='font-size:.8em;'>
-            I've been working with web applications and databases for the last few years  in my role as an academic researcher, and since moving to Asheville I've been looking for way to apply and develop these skills in service to a meaningful cause.<br><br>
+            <div style='font-size:.8em; text-align: left'>
+            I've been working with web applications and databases for the last few years  in my role as an academic researcher. Since moving to Asheville I've been looking for way to apply and develop these skills in service to a meaningful cause.<br><br>
             This role at Locus seems like a perfect fit!<br><br>
-            I put this page together to demonstrate some of my previous work with the technologies listed in the job description -- why just tell when you can also show? -- and though some of these examples are a couple years old and don't reflect my current design sensibilities, I think they still provide some useful insight into my range of experience. For lack of an easily displayed project, <span style='font-family: monospace; font-size:.8em; background-color:#fafafa'>"SELECT description FROM show_and_tell WHERE LOWER(tech_used) LIKE '%sql%'"</span> returns no records, but I do have some experience working with both relational and non-relational databases, schemas, and queries.<br><br>
+            I put this page together to demonstrate some of my previous work with the technologies listed in the job description -- why just tell when you can also show? For lack of an easily displayed project, <span style='font-family: monospace; font-size:.8em; background-color:#fafafa'>"SELECT description FROM show_and_tell WHERE LOWER(tech_used) LIKE '%sql%'"</span> returns no records, but I do have some experience working with both relational and non-relational databases, schemas, and queries.<br><br>
             At the end I'll also tell you a little more information about what I'm like and what I like about this opportunity. But first, a little demo derby!
-            </span>
+            </div>
           </div>     
         </div>
       </div>
@@ -88,7 +88,7 @@
             <div style='text-align:center;text-decoration: underline'>Description</div>
             <div style='width:100%'>
               <div style='padding:5px 20px; font-size:.8em; margin:auto; text-align:justify'>
-                This is part of a current personal project of mine that was sparked by the desire to see how the front page of reddit evolves over time. I'm scraping and accruing front-page data into a database, which can then be rendered in an interactive timeline format. My goal is to make a publicly available live version, but what you see here is just a demo retrieving a static json file.<br><br>
+                This is part of a current personal project of mine that was sparked by the desire to see how the front page of reddit evolves over time. I'm scraping and accruing front-page data into a database, which can then be rendered in an interactive timeline format. My goal is to make a publicly available live version, but what you see here is just a demo retrieving a static .json file.<br><br>
                 It's been fun to explore mixing interaction with analysis - for instance the color tiles re-arrange to reflect the "score" for that subreddit in the displayed time range, and by isolating just a few subreddits you can see how different categories are popular at different times of day (though not with this short dataset).
                 <br><br>
                 I find that teaching myself things is most effective with a goal in mind, so this project has been a great platform both for getting practice with d3 and with solving emergent challenges using javascript!
@@ -111,8 +111,8 @@
                 <li>MongoDB</li>
               </ul>
             </div>
-            <div style='padding-top:15px; font-size:.7em; max-width:550px; margin:auto'>
-              Please note that this code is still very much a work in progress - the sizing isn't responsive, I've left many variables exposed to the console, and I haven't really given it a good re-factor. These steps were pending a re-write of the scraper that would store data in the rank-changes-only format that I wound up needing to employ in the graph and that will help significantly reduce the amount of transferred data.
+            <div style='padding-top:15px; font-size:.7em; max-width:550px; margin:auto; text-align:justify'>
+              Please note that this code is still very much a work in progress - the sizing isn't responsive, zooming can be buggy, variables are exposed to the console,  etc. These steps are pending a re-write of the scraper that will store data in a rank-changes-only format that expedites graphing and significantly reduces the amount of transferred data.
             </div>
           </div>
         </div>
@@ -125,10 +125,10 @@
         <div class='col-md-8 tilebody' style='padding:0px 30px'>
           <div style='width:100%; text-align:center; text-decoration:underline'>Description</div>
           <div style='padding:5px 20px; font-size:.8em; text-align: justify'>
-            MotivationSurvey.com was a custom-built survey administration web application designed to reduce or eliminate many of the difficulties encountered in manual administration of longitudinal surveys.<br><br>
+            MotivationSurvey.com was a custom-built survey administration web application that allowed a small research team to collect a large amount of data in support of an NSF-backed motivation research grant. The software was designed to reduce or eliminate many of the difficulties encountered in manual administration of precisely scheduled longitudinal surveys.<br><br>
             Because of our unique use-case of administering surveys each week at times specific to each class, there was no readily available off-the-shelf survey system that automated this process. Additionally we wanted to implement a smart reminder system that emailed only non-responders, which meaningfully aided our completion rates without annoying people who already participated.<br><br>
-            The system was very successful, collecting over 5,000 responses during the three years of the project, allowing us to accrue the largest dataset of its kind while having much lower incompletion rates and administrative loads than would have occurred with a manually administered, non-customized approach. Unfortunately the site is no longer available because the research project has ended, though you can still see the welcome page via the <a target='_blank' href='http://web.archive.org/web/20160306040427/http://motivationsurvey.com/'>wayback machine</a>.<br><br>
-            This project actually launched my web app development trajectory: we hired two students over the summer to build the site, but they lost momentum and wound up leaving significant portions uncompleted and non-functional. With our large-scale data collection project looming, I taught myself enough about javascript, node, jquery, and css to complete the project and add new functionality down the line. Although it was stressful at the time, I'm ultimately glad this launched me into the very interesting and powerful world of modern full stack web development!
+            The system was very successful, collecting over 5,000 responses during the three years of the project, allowing us to accrue the largest dataset of its kind while having much lower incompletion rates and administrative loads than would have occurred with a manually administered, non-customized approach. Although the site is no longer available because the research project has ended, you can still see the welcome page via the <a target='_blank' href='http://web.archive.org/web/20160306040427/http://motivationsurvey.com/'>wayback machine</a>.<br><br>
+            This project actually launched my web app development trajectory: I used an Agile approach to coordinate with two students over the summer to build the site, but they lost momentum and wound up leaving significant portions uncompleted and non-functional. With our large-scale data collection project looming, I taught myself enough about javascript, node, jquery, and css to complete the project and add new functionality down the line. I was happy to have upheld the project goals and deliverables, and am glad this launched me into the world of modern full stack web development!
           </div>
         </div>
         <div class='col-md-4 tilebody' style='padding:0px 10px;'>
@@ -170,7 +170,7 @@
           <div style='text-align:center;text-decoration: underline'>Description</div>
           <div style='padding:5px 20px; font-size:.8em; text-align: justify'>
             Reviewing the Google Analytics for our motivation survey site revealed that many students were accessing the page via their mobile device. This created usability issues in the survey, which was laid out as a matrix of radio buttons in a fixed-width, non-responsive format that would be significantly obscured in a mobile browser.<br><br>
-            To address this, I made a prototype for a responsive and more touch-friendly interface using Twitter Bootstrap, which was already used in the site, but also using the power of data-binding provided by Angular.js. This made coordinating the states of various elements on the page much cleaner than in raw javascript or JQuery, and also opened the possibility for efficient creation of new surveys by dynamically generating forms from a stored data structure.<br><br>
+            To address this, I built a prototype for a responsive and more touch-friendly interface using Twitter Bootstrap, which was already used in the site, but also using the power of data-binding provided by Angular.js. This made coordinating the states of various elements on the page much cleaner than in raw javascript or JQuery, and also opened the possibility for efficient creation of new surveys by dynamically generating forms from a stored data structure.<br><br>
             This interface was also an improvement for desktop users: the original layout had the the meaning ascribed to the numeric responses displayed only in the column headers, which made them difficult to see as the user worked down the form. The new version made these meanings visible for each question, reducing the possibility of accidental misinterpretation and increasing accuracy.<br><br>
             
           </div>
@@ -212,22 +212,20 @@
           <div style='text-align:center; width:70%;margin:auto'>
             A self-starting engineer with a desire to be part of something good<br><br>
           </div>
-          <span style='font-size:.8em;'>
-          I am a highly independent worker who loves the challenge of teaching myself new things! What I find most motivating, however, is the sense of making a real contribution to the people around me and, ideally, to a cause greater than just myself. Hence, I am very enticed by the promise this position holds as a role where I could meaningfully contribute to others, be around people from whom I can learn and grow, and work to support an environmentally conscious goal that resonates very strongly with me.
+          <div style='font-size:.8em; text-align:left'>
+          I am a highly independent worker who loves the challenge of teaching myself new things! My educational background is in Engineering with a concentration in Systems Design, and I find this holistic yet technical lens to be useful in many situations.<br><br> What I find most motivating, however, is the sense of making a real contribution to the people around me and, ideally, to a cause greater than just myself. Hence, I am very enticed by the opportunities offered by this role to meaningfully contribute to others, be around people from whom I can learn and grow, and work to support an environmentally conscious goal that resonates very strongly with me.
           <br><br>
-          I'm originally from Kentucky but spent the last 14 or so years in the Boston area, until <strike>fleeing the winter</strike> moving to Asheville last February. My educational background is in Engineering with a concentration in Systems Design, and I find this holistic yet technical lens to be useful in many situations.
-          <br><br>
-          Although I love the wonders of technology, I also love the outdoors and music - my reasons for relocating to Asheville weren't solely weather related! I greatly enjoy my new home, and find the friendly and laid-back demeanor to jive very well with my own.
+          I'm originally from Kentucky but spent the last 14 or so years in the Boston area, until <strike>fleeing the winter</strike> moving to Asheville last February. Although I love the wonders of technology, I also love the outdoors and music - my reasons for relocating to Asheville weren't solely weather related! I greatly enjoy my new home, and find the friendly and laid-back demeanor to jive very well with my own.
 
-          </span>
+          </div>
         </div>
       </div>
 
       <div class='col-xs-12'>
-        <div style='background-color:#52a6ea; color: #ebebed; width:400px; margin: 30px auto 0px; padding:2px 20px 18px; border-radius:50px; text-shadow: 0 1px #666666'>
-          <div class='tiletitle'>Thanks for Reading!</div>
+        <div style='background-color:#52a6ea; color: #ebebed; width:280px; margin: 30px auto 0px; padding:7px 0px 2px; border-top-right-radius:25px; border-top-left-radius:25px; text-shadow: 0 1px #666666'>
+          <div class='tiletitle' style='margin:0px; font-size:1.8em'>Thanks for Reading!</div>
         </div>
-        <div class='tilebody' style='margin:10px auto; width=80%; max-width:510px; text-align:center'>
+        <div class='tilebody' style='margin:0px auto; width=80%; max-width:540px; text-align:center; border-style:solid; border-width:4px; border-color:#52a6ea; padding:10px; border-radius:10px;background-color: #f5f5f5'>
           <div style='font-size: .8em'>Please let me know if there is anything else I can provide. I am very excited about this opportunity, and I hope to discuss it with you soon!</div>
         </div>
       </div>
